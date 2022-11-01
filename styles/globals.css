@@ -1,0 +1,40 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font: 100%;
+  font-family: Merriweather, serif;
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  border-radius: 10px;
+  padding: 15px;
+  max-width: 630px;
+}
+
+code {
+  background-color: #2d2d2d;
+  color: #ccc;
+  padding: 3px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+  img {
+    max-width: 100%;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    background-color: #1b1b1b;
+    color: white;
+  }
+}

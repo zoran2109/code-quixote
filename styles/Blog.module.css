@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@900&display=swap");
+
+.container {
+  padding: 0 2rem;
+}
+
+.header {
+  margin-bottom: 10px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.headerLink {
+  font-size: 3rem;
+  text-align: center;
+  text-decoration: none;
+  font-family: Montserrat, sans-serif;
+}
+
+.headerLinkPost {
+  font-size: 2rem;
+  color: #dd3224;
+  font-family: Montserrat, sans-serif;
+  text-decoration: none;
+}
+
+.headerLink:hover,
+.headerLink:active {
+  text-decoration: none;
+}
+
+.headerSubtitle {
+  font-size: 1rem;
+  display: inline-block;
+}
+
+.main {
+  padding: 2rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.postMain {
+  max-width: 630px;
+  margin: 0 20px;
+}
+
+.title {
+  margin: 15px 0;
+  line-height: 1.15;
+  font-weight: 900;
+  font-size: 2.5rem;
+  font-family: Montserrat, sans-serif;
+}
+
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 80%;
+}
+
+.post {
+  max-width: 630px;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.post h3 {
+  font-size: 1.7rem;
+  line-height: 1.1;
+}
+
+.card {
+  margin: 1rem;
+  padding: 1.5rem;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  width: 630px;
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+  border-color: #dd3224;
+}
+
+.card h3 {
+  margin: 0 0 0.5rem 0;
+  font-family: Montserrat, sans-serif;
+  font-size: 2rem;
+  font-weight: 900;
+  color: #dd3224;
+}
+
+.cardDescription {
+  margin: 0.2rem;
+  line-height: 1.5;
+  font-size: 1.1rem;
+}
+
+.date {
+  font-size: 1rem;
+}
+
+.info {
+  text-decoration: none;
+  display: inline-block;
+  width: 20px;
+  height: 22px;
+}
+
+.info:hover .computerEmoji {
+  display: none;
+}
+
+.infoEmoji {
+  display: none;
+}
+
+.info:hover .infoEmoji {
+  display: inline;
+}
+
+.backButton {
+  text-align: center;
+  margin: 1rem;
+  padding: 1rem 1.5rem;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.backButton:hover,
+.backButton:focus,
+.backButton:active {
+  border-color: #dd3224;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .main {
+    max-width: 100%;
+  }
+
+  .postMain {
+    max-width: 88%;
+  }
+
+  .card {
+    padding: 0.5rem;
+    margin: 1rem 0;
+    max-width: 100%;
+  }
+
+  .headerSubtitle {
+    display: inline;
+  }
+
+  .info:focus .computerEmoji {
+    display: none;
+  }
+
+  .info:focus .infoEmoji {
+    display: inline;
+  }
+}

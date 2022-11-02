@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Header = ({ home = true }) => (
   <header className={styles.header}>
-    <h1>
+    <h1 className={styles.mainHeader}>
       <Link href="/">
         <a className={home ? styles.headerLink : styles.headerLinkPost}>
           Code Quixote
@@ -11,7 +11,7 @@ const Header = ({ home = true }) => (
       </Link>
     </h1>
     {home && (
-      <div>
+      <div className={styles.headerSubtitleContainer}>
         <p className={styles.headerSubtitle}>
           Humanist&apos;s wanderings in the land of software development{" "}
         </p>

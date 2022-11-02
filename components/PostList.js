@@ -8,13 +8,18 @@ const PostList = ({ posts }) => {
       {sortPostsByDate(posts).map((post) => (
         <Link href={`${post.slug}`} key={post.slug}>
           <a className={styles.card}>
-            <h3>{post.frontMatter.title}</h3>
-            <p className={styles.date}>
-              {getDate(post.frontMatter.publishedAt)}
-            </p>
-            <p className={styles.cardDescription}>
-              {post.frontMatter.description}
-            </p>
+            <article>
+              <header>
+                <h3>{post.frontMatter.title}</h3>
+              </header>
+
+              <p className={styles.date}>
+                {getDate(post.frontMatter.publishedAt)}
+              </p>
+              <p className={styles.cardDescription}>
+                {post.frontMatter.description}
+              </p>
+            </article>
           </a>
         </Link>
       ))}

@@ -10,7 +10,7 @@ const Post = ({ data, content }) => {
   }, []);
 
   return (
-    <div className={styles.postMain}>
+    <article className={styles.postMain}>
       <h2 className={styles.title}>{data.title.replace(/^.*:/, "")}</h2>
       <div>{getDate(data.publishedAt)}</div>
 
@@ -18,7 +18,7 @@ const Post = ({ data, content }) => {
         className={styles.post}
         dangerouslySetInnerHTML={{ __html: marked(content) }}
       />
-    </div>
+    </article>
   );
 };
 
